@@ -17,31 +17,31 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <RadioButton
-            android:id="@+id/rbValkoinen"
+            android:id="@+id/rbWhite"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Valkoinen" />
 
         <RadioButton
-            android:id="@+id/rbVihreä"
+            android:id="@+id/rbGreen"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Vihreä" />
 
         <RadioButton
-            android:id="@+id/rbPinkki"
+            android:id="@+id/rbPink"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Pinkki" />
 
         <RadioButton
-            android:id="@+id/rbOranssi"
+            android:id="@+id/rbOrange"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Oranssi" />
 
         <RadioButton
-            android:id="@+id/rbMusta"
+            android:id="@+id/rbBlack"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Musta" />
@@ -49,7 +49,7 @@
     </RadioGroup>
 
     <EditText
-        android:id="@+id/editTextLutemonNimi"
+        android:id="@+id/editTextLutemonName"
         android:layout_width="359dp"
         android:layout_height="42dp"
         android:layout_marginTop="28dp"
@@ -71,5 +71,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextLutemonNimi" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextLutemonName" />
 </androidx.constraintlayout.widget.ConstraintLayout>

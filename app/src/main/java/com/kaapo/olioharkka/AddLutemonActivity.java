@@ -18,7 +18,7 @@ import com.kaapo.olioharkka.StorageFolder.Home;
 
 public class AddLutemonActivity extends AppCompatActivity {
 
-    private EditText editTextLutemonNimi;
+    private EditText editTextLutemonName;
 
     private RadioGroup radioVari;
 
@@ -27,12 +27,12 @@ public class AddLutemonActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_lutemon);
 
-        editTextLutemonNimi = findViewById(R.id.editTextLutemonNimi);
+        editTextLutemonName = findViewById(R.id.editTextLutemonName);
         radioVari = findViewById(R.id.radioGroup);
     }
 
     public void addLutemon(View view) {
-        String name = editTextLutemonNimi.getText().toString();
+        String name = editTextLutemonName.getText().toString();
 
         int selectedRadioButtonId = radioVari.getCheckedRadioButtonId();
         RadioButton selectedRadioButton = findViewById(selectedRadioButtonId);
@@ -59,6 +59,6 @@ public class AddLutemonActivity extends AppCompatActivity {
 
         Home home = Home.getInstance();
         home.createLutemon(lutemon);
-        editTextLutemonNimi.setText("");
+        editTextLutemonName.setText("");
     }
 }
